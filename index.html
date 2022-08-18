@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scott Rohrig | Info</title>
   <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect shortcut icon" type="image/jpg" href="/assets/favicon.ico" <link href="style.css"
+    rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,18 +20,18 @@
 </head>
 
 <body class="light">
+  <div class="bubble"></div>
   <div class="container">
     <div class="info">
       <div class="profile-photo"></div>
       <div class="profile-heading">
         <h1>Scott Rohrig</h1>
       </div>
+      <div class="text-secondary"><b>Web Developer</b></div>
       <p>
-        <b>Web Developer</b>
-        <br />
-        <a href="#" id="profile"><b>Profile</b></a>
+        <a href="https://scottrohrig.github.io/portfolio/" id="profile"><b>Profile</b></a>
         |
-        <a href="#" id="projects"><b>Projects</b></a>
+        <a href="https://scottrohrig.github.io/portfolio/#portfolio" id="projects"><b>Projects</b></a>
       </p>
       <div class="text-secondary"><b>Education</b></div>
       <p>
@@ -45,7 +47,7 @@
     </div>
   </div>
 
-  <div id="overlay">
+  <div id="overlay" class="hide">
     <div id="modal-bg">
       <div id="modal">
         <div class="modal-header">
@@ -63,6 +65,7 @@
       </div>
     </div>
   </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>
