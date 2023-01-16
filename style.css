@@ -269,13 +269,17 @@ p {
 #cancelModal {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-weight: 900;
-  transform: scale(1.15, 1);
+  /* transform: scale(1.15, 1); */
   cursor: pointer;
 }
 
 .modal-body {
   color: #000;
   padding: 10px;
+}
+
+.quote {
+  padding: 5px;
 }
 
 /* ANIMATIONS */

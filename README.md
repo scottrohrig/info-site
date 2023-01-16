@@ -8,7 +8,7 @@ My Info Card
 
 1. Purchase Namecheap.com domain
 1. Configure Domain
-    1. Sign in to namecheap and navigate to `Domain List` 
+    1. Sign in to namecheap and navigate to `Domain List`
     1. Select the `Advanced DNS` tab (or option from collapsing menu on mobile)
     1. Click the `ADD NEW RECORD` button for each of the following
 
@@ -28,3 +28,13 @@ My Info Card
     1. Under `Custom Domain` input your Namecheap domain and click `Save`
 
 [more info](https://dev.to/pauljwil/connect-github-pages-to-your-namecheap-domain-4gjj)
+
+## My Info Site on IPFS
+
+This site was deployed to IPFS via github pages and uses [fleek.co](https://app.fleek.co) as a service to interact with IPFS.
+
+Fleek notified users of a change in services for storage. As of 1/16/2023 Fleek's Storage API will be depricating old URLs and introduce new rules to terminate support for html, css, and js files served through storageapi.fleek.co.
+
+To learn how to migrate see the [Custom Storage API Domains Documentation](https://docs.fleek.co/storage/custom-storage-domains)
+
+I haven't confirmed that this will break my info-site. 
