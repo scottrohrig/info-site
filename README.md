@@ -2,7 +2,7 @@
 
 My Info Card
 
-[scottrohrig.com](http://scottrohrig.com)
+[scottrohrig.com](http://www.scottrohrig.com)
 
 ## Hosting Namecheap Domain via GitHub Pages
 
