@@ -138,6 +138,7 @@ dl {
 }
 
 .text-secondary {
+  font-size: 1rem;
   font-family: 'Permanent Marker';
   text-transform: uppercase;
 }
