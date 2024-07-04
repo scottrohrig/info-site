@@ -1,24 +1,27 @@
 window.onload = (event) => {
 
   const modal = document.getElementById('overlay')
-  const title = document.querySelectorAll('h1')[0]
+  const title = document.querySelector('h1')
   const cancelModal = document.getElementById('cancelModal')
   const quoteEl = document.getElementById('quote')
   const authorEl = document.getElementById('author')
 
   const setQuote = async () => {
+    // return // quote api no longer in service
     const quote = {content:'', author:''}
 
     try {
-      const response = await fetch('https://quotable.io/random')
+      const response = await fetch('https://type.fit/api/quotes')
       const data = await response.json()
-      quote.content = data.content
-      quote.author = data.author
+      const randomIdx = Math.floor(Math.random() * data.length)
+      quote.content = data[randomIdx].text
+      quote.author = data[randomIdx].author
     } catch (error) {
       alert('unable to fetch quote', error)
     }
     quoteEl.textContent = quote.content
-    authorEl.textContent = '- ' + quote.author
+    authorEl.textContent = '- ' + quote.author.replace(', type.fit', '');
+    
   }
 
   const toggleModal = () => {
