@@ -8,7 +8,7 @@ window.onload = (event) => {
 
   const setQuote = async () => {
     // return // quote api no longer in service
-    const quote = {content:'', author:''}
+    const quote = { content: '', author: '' }
 
     try {
       const response = await fetch('https://type.fit/api/quotes')
@@ -17,11 +17,11 @@ window.onload = (event) => {
       quote.content = data[randomIdx].text
       quote.author = data[randomIdx].author
     } catch (error) {
-      alert('unable to fetch quote', error)
+      //
     }
     quoteEl.textContent = quote.content
     authorEl.textContent = '- ' + quote.author.replace(', type.fit', '');
-    
+
   }
 
   const toggleModal = () => {
